@@ -1,0 +1,54 @@
+[
+  {
+    "id": "ev-mobility",
+    "name": "Electric Vehicles & Clean Mobility",
+    "market_size_india_2025": "$7.2 Billion",
+    "cagr": "49.0%",
+    "key_opportunities": [
+      "2W/3W Battery swapping infrastructure",
+      "Precision power electronics and Japanese thermal management systems",
+      "Fleet telematics and regenerative brake components"
+    ],
+    "regulatory_body": "Ministry of Heavy Industries (FAME/EMPS, PLI-Auto)",
+    "bilateral_initiatives": "India-Japan Clean Energy Partnership (CEP)"
+  },
+  {
+    "id": "smart-manufacturing",
+    "name": "Smart Manufacturing & Industrial Automation",
+    "market_size_india_2025": "$14.8 Billion",
+    "cagr": "21.5%",
+    "key_opportunities": [
+      "Factory IoT sensor networks and predictive maintenance",
+      "Robotic welding and automated optical inspection for electronics corridor (Tamil Nadu, Gujarat, NCR)",
+      "Kaizen-integrated MES software"
+    ],
+    "regulatory_body": "Department for Promotion of Industry and Internal Trade (DPIIT)",
+    "bilateral_initiatives": "Japan-India Make-in-India Special Finance Facility"
+  },
+  {
+    "id": "medtech-diagnostics",
+    "name": "MedTech, Diagnostics & Healthcare Robotics",
+    "market_size_india_2025": "$11.0 Billion",
+    "cagr": "18.2%",
+    "key_opportunities": [
+      "Point-of-care ultrasound and AI-augmented imaging",
+      "Minimally invasive surgical tools and rehabilitation robotics",
+      "Ayushman Bharat Digital Mission (ABDM) compliant telehealth hardware"
+    ],
+    "regulatory_body": "Central Drugs Standard Control Organisation (CDSCO)",
+    "bilateral_initiatives": "JETRO-Invest India Healthcare Taskforce"
+  },
+  {
+    "id": "enterprise-saas",
+    "name": "B2B Enterprise Software & Supply Chain Tech",
+    "market_size_india_2025": "$18.5 Billion",
+    "cagr": "28.0%",
+    "key_opportunities": [
+      "Cross-border supply chain transparency & customs automation",
+      "AI-driven procurement and GST/e-invoicing reconciliation",
+      "Bilingual enterprise collaboration tools (JP-EN-Hindi)"
+    ],
+    "regulatory_body": "Ministry of Electronics and Information Technology (MeitY)",
+    "bilateral_initiatives": "India-Japan Digital Partnership (IJDP)"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "partner-dynamic-industrial",
+    "name": "Dynamic Industrial Automation Pvt Ltd",
+    "partner_type": "System Integrator",
+    "industry": ["Smart Manufacturing", "Automotive", "Precision Engineering"],
+    "regions": ["Tamil Nadu", "Karnataka", "Andhra Pradesh"],
+    "capabilities": ["PLC Programming", "Custom End-Effector Tooling", "On-site Commissioning", "Local 24/7 Field Support"],
+    "customer_segments": ["Indian Tier-2 Auto Component Manufacturers", "SME Machine Shops", "Pump & Valve Fabricators"],
+    "technology_focus": ["6-Axis Articulated Robots", "Vision Inspection Systems", "CNC Machine Tending", "Low-Power Automation"],
+    "distribution_capability": "Regional warehousing in Chennai & Coimbatore; 20+ field service engineers across South India.",
+    "integration_capability": "Turnkey robotic cell engineering, safety fencing, CNC machine tool interfacing.",
+    "pilot_capability": "Dedicated 5,000 sq.ft automation demo lab in Sriperumbudur for customer proof-of-concept testing.",
+    "source": "Curated demo dataset",
+    "base_scores": {
+      "market_fit": 23,
+      "industry_fit": 19,
+      "technical_fit": 19,
+      "geographic_fit": 14,
+      "distribution_fit": 8,
+      "pilot_fit": 9
+    }
+  },
+  {
+    "id": "partner-kalyani-automation",
+    "name": "Kalyani Automation & Robotics Solutions",
+    "partner_type": "Distributor",
+    "industry": ["Automotive", "Smart Manufacturing", "Forging & Casting"],
+    "regions": ["Gujarat", "Maharashtra", "Delhi-NCR"],
+    "capabilities": ["Industrial Equipment Distribution", "INR Direct Billing & Extended Credit Lines", "Import Clearance & Duty Handling"],
+    "customer_segments": ["Indian Tier-2 & Tier-3 SME Auto Ancillaries", "Sheet Metal & Press Shops"],
+    "technology_focus": ["Collaborative Robots", "Compact Industrial Robots", "Material Handling"],
+    "distribution_capability": "Extensive dealer network with 40+ sales touchpoints across Sanand, Pune, and Manesar.",
+    "integration_capability": "Standard integration with pre-packaged robot pedestals and grippers.",
+    "pilot_capability": "Mobile demonstration van equipped with live working robot demo cells for on-site client visits.",
+    "source": "Curated demo dataset",
+    "base_scores": {
+      "market_fit": 22,
+      "industry_fit": 18,
+      "technical_fit": 16,
+      "geographic_fit": 14,
+      "distribution_fit": 10,
+      "pilot_fit": 8
+    }
+  },
+  {
+    "id": "partner-apex-mechatronics",
+    "name": "Apex Mechatronics & Vision Systems",
+    "partner_type": "Technology Partner",
+    "industry": ["Smart Manufacturing", "Electronics & Semiconductor", "Aerospace Precision"],
+    "regions": ["Bengaluru / Karnataka", "Tamil Nadu", "Telangana"],
+    "capabilities": ["Optical Torque Calibration", "AI Computer Vision Integration", "Edge IoT Gateway Configuration"],
+    "customer_segments": ["Electronics EMS Providers", "Precision Instrument Makers", "High-Mix Low-Volume Machining"],
+    "technology_focus": ["Collaborative Robotics", "Sub-millimeter Optical Inspection", "Torque-controlled Assembly"],
+    "distribution_capability": "High-value direct technical sales team specializing in deep-tech and electronics accounts.",
+    "integration_capability": "Deep software API integration with Japanese robot controllers (EtherCAT, Modbus TCP, ROS2).",
+    "pilot_capability": "Fast-track 2-week PoC deployment facility with specialized optical and torque test benches.",
+    "source": "Curated demo dataset",
+    "base_scores": {
+      "market_fit": 20,
+      "industry_fit": 18,
+      "technical_fit": 20,
+      "geographic_fit": 13,
+      "distribution_fit": 7,
+      "pilot_fit": 9
+    }
+  },
+  {
+    "id": "partner-vanguard-machinery",
+    "name": "Vanguard Machinery & Tooling India",
+    "partner_type": "Joint Venture Candidate",
+    "industry": ["Smart Manufacturing", "Industrial Tooling", "Metalworking"],
+    "regions": ["Delhi-NCR", "Haryana", "Rajasthan"],
+    "capabilities": ["Domestic Auxiliary Manufacturing", "Bilingual Japanese-Indian Management", "Domestic Sourcing of Structures"],
+    "customer_segments": ["Tier-1 & Tier-2 Machine Tool Shops", "Neemrana Japanese Zone Suppliers"],
+    "technology_focus": ["Machine Tending Robotics", "Press Automation", "Tooling Fixtures"],
+    "distribution_capability": "Joint sales channels covering northern manufacturing belt (Gurugram, Manesar, Neemrana, Faridabad).",
+    "integration_capability": "Full manufacturing capability for auxiliary robot peripherals (stands, safety enclosures, conveyors).",
+    "pilot_capability": "Shared testing shop floor with 3 CNC machining centers for live production benchmarking.",
+    "source": "Curated demo dataset",
+    "base_scores": {
+      "market_fit": 21,
+      "industry_fit": 17,
+      "technical_fit": 17,
+      "geographic_fit": 13,
+      "distribution_fit": 8,
+      "pilot_fit": 8
+    }
+  }
+]

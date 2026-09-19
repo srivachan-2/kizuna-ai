@@ -1,0 +1,26 @@
+[
+  {
+    "id": "dpdp-act-2023",
+    "name": "Digital Personal Data Protection (DPDP) Act",
+    "impact_level": "Critical",
+    "applicable_sectors": ["Enterprise SaaS", "MedTech", "FinTech", "IoT Devices"],
+    "summary": "Mandates explicit consent architectures, data fiduciary obligations, strict cross-border transfer rules, and significant penalties for non-compliance.",
+    "japanese_corporate_guidance": "Requires local data localization compliance audits and consent manager integration."
+  },
+  {
+    "id": "bis-crs",
+    "name": "BIS Compulsory Registration Scheme (CRS)",
+    "impact_level": "High",
+    "applicable_sectors": ["Smart Manufacturing", "EV Electronics", "Hardware & Sensors"],
+    "summary": "Bureau of Indian Standards certification required for electronic and IT goods before customs clearance and domestic distribution.",
+    "japanese_corporate_guidance": "Lab testing must be conducted in BIS-recognized labs in India; lead times range between 8-16 weeks."
+  },
+  {
+    "id": "fdi-automatic-route",
+    "name": "100% FDI Automatic Route for Manufacturing",
+    "impact_level": "Favorable",
+    "applicable_sectors": ["Automotive", "Industrial Automation", "Renewable Energy"],
+    "summary": "Permits 100% foreign direct investment without prior government or RBI approval for designated manufacturing sectors.",
+    "japanese_corporate_guidance": "Streamlined incorporation via SPICe+ and NICDC industrial township incentives (e.g. Neemrana Japanese Industrial Zone)."
+  }
+]

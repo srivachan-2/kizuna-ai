@@ -1,0 +1,70 @@
+[
+  {
+    "id": "comp-senstech-india",
+    "sector_id": "smart-manufacturing",
+    "name": "SensTech Automation India Pvt Ltd",
+    "type": "domestic",
+    "product_category": "Industrial Automation & Retrofit Robotics",
+    "target_segment": "Indian Tier-2 & Tier-3 SME Machine Shops",
+    "positioning": "Low-cost local automation with domestic servicing network",
+    "pricing": "₹6,00,000 - ₹9,00,000 per retrofit arm (40-50% lower than Japanese imports)",
+    "strengths": [
+      "Extensive nationwide field engineering presence across Pune, Coimbatore, and Rajkot",
+      "Billing directly in INR with zero FX risk for local SMEs",
+      "Fast turnaround on replacement mechanical parts"
+    ],
+    "weaknesses": [
+      "Higher failure rate in precision CNC micro-assembly",
+      "No proprietary edge AI optical torque sensing",
+      "Limited safety certifications for cage-free collaboration"
+    ],
+    "visible_gap": "Lacks high-precision optical torque feedback and low electrical power draw required by modern EMS assemblers.",
+    "source": "DPIIT Industrial Automation Registry 2024",
+    "confidence": 0.92
+  },
+  {
+    "id": "comp-ur-india",
+    "sector_id": "smart-manufacturing",
+    "name": "Universal Robots India (Teradyne)",
+    "type": "global",
+    "product_category": "Collaborative Robots (Cobots - UR Series)",
+    "target_segment": "Tier-1 Automotive OEMs and Global Electronics Manufacturers",
+    "positioning": "Premium global market leader with extensive ecosystem (UR+)",
+    "pricing": "₹18,00,000 - ₹26,00,000 per unit (Premium global pricing)",
+    "strengths": [
+      "Market leader brand recognition in Indian automotive assembly lines (Tata, Mahindra)",
+      "Vast network of certified local system integrators",
+      "Intuitive polyScope graphical programming interface"
+    ],
+    "weaknesses": [
+      "High acquisition cost prohibitive for Indian SMEs",
+      "Expensive proprietary replacement spares",
+      "Higher electrical power consumption compared to ultra-compact Japanese arms"
+    ],
+    "visible_gap": "Too expensive for sub-₹15 Lakh budget threshold of Indian SME machine shops.",
+    "source": "Invest India Robotics Sector Report 2024",
+    "confidence": 0.95
+  },
+  {
+    "id": "comp-fanuc-india",
+    "sector_id": "smart-manufacturing",
+    "name": "Fanuc India Pvt Ltd",
+    "type": "global",
+    "product_category": "Heavy Industrial & Collaborative Robotics (CRX Series)",
+    "target_segment": "High-volume automotive and heavy industrial machinery",
+    "positioning": "Industrial gold standard for continuous heavy-duty CNC machining",
+    "pricing": "₹20,000,000 - ₹30,000,000 per robotic cell",
+    "strengths": [
+      "Massive installed base in Indian CNC tooling corridor (Bengaluru Technology Center)",
+      "Unmatched 8-year reliability track record",
+      "Direct Japanese factory backing and engineering depth"
+    ],
+    "weaknesses": [
+      "Heavier footprint not optimized for compact table-top electronics assembly",
+      "Complex integration requiring specialized Fanuc programmers"
+    ],
+    "visible_gap": "Over-engineered for lightweight electronics assembly and SME high-mix low-volume setups.",
+    "source": "Japan-India Industrial Cooperation Directory 2024",
+    "confidence": 0.94
+  }
+]
