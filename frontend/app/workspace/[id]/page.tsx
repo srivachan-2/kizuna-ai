@@ -61,7 +61,10 @@ import {
   getLLMStatus,
   getExecutiveBrief,
   getExportPdfUrl,
-  getExportMarkdownUrl
+  getExportMarkdownUrl,
+  isDemoMode,
+  downloadMarkdownBrief,
+  exportPrintablePdfView
 } from "@/lib/api";
 import {
   AnalysisStage,
@@ -236,7 +239,9 @@ export default function WorkspacePage() {
     setRunningPipeline(true);
     setErrorMessage(null);
     try {
-      const res = await runAnalysis(projectId);
+      const res = await runAnalysis(projectId, (state) => {
+        setAnalysisState(state);
+      });
       if (res) {
         setAnalysisState(res);
       }
@@ -560,11 +565,11 @@ export default function WorkspacePage() {
 
         <div className="flex flex-wrap items-center gap-2.5">
           <Badge
-            variant={llmMode === "gemini_live" ? "success" : "outline"}
+            variant={llmMode === "gemini_live" && !isDemoMode ? "success" : "outline"}
             className="text-[10px] py-1 px-2.5 gap-1.5"
           >
-            <span className={`w-1.5 h-1.5 rounded-full ${llmMode === "gemini_live" ? "bg-emerald-400 animate-pulse" : "bg-indigo-400"}`}></span>
-            <span>{llmMode === "gemini_live" ? "LIVE AI (GEMINI)" : "DEMO / FALLBACK MODE"}</span>
+            <span className={`w-1.5 h-1.5 rounded-full ${llmMode === "gemini_live" && !isDemoMode ? "bg-emerald-400 animate-pulse" : "bg-indigo-400"}`}></span>
+            <span>{isDemoMode ? "DEMO INTELLIGENCE" : llmMode === "gemini_live" ? "LIVE AI (GEMINI)" : "CURATED BENCHMARK SCENARIO"}</span>
           </Badge>
 
           {(projectId === "demo-robot-sme" || projectId === "demo") ? (
@@ -2492,7 +2497,13 @@ export default function WorkspacePage() {
                   <Button
                     variant="outline"
                     size="sm"
-                    onClick={() => window.open(getExportPdfUrl(projectId, briefLanguage), "_blank")}
+                    onClick={() => {
+                      if (isDemoMode && executiveBrief) {
+                        exportPrintablePdfView(executiveBrief);
+                      } else {
+                        window.open(getExportPdfUrl(projectId, briefLanguage), "_blank");
+                      }
+                    }}
                     className="text-xs gap-1.5 border-indigo-500/40 text-indigo-300 hover:bg-indigo-950/30"
                   >
                     <FileDown className="w-3.5 h-3.5" />
@@ -2501,7 +2512,13 @@ export default function WorkspacePage() {
                   <Button
                     variant="outline"
                     size="sm"
-                    onClick={() => window.open(getExportMarkdownUrl(projectId, briefLanguage), "_blank")}
+                    onClick={() => {
+                      if (isDemoMode && executiveBrief) {
+                        downloadMarkdownBrief(executiveBrief);
+                      } else {
+                        window.open(getExportMarkdownUrl(projectId, briefLanguage), "_blank");
+                      }
+                    }}
                     className="text-xs gap-1.5 border-border text-slate-300 hover:bg-surface-100"
                   >
                     <FileText className="w-3.5 h-3.5" />

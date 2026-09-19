@@ -18,7 +18,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { StatusPill } from "@/components/ui/status-pill";
-import { getLLMStatus, testLLMConnection } from "@/lib/api";
+import { getLLMStatus, testLLMConnection, isDemoMode } from "@/lib/api";
 import { LLMStatusResponse, LLMTestResponse } from "@/types";
 
 export default function SettingsPage() {
@@ -119,6 +119,11 @@ export default function SettingsPage() {
               <div className="pt-0.5">
                 {loading ? (
                   <span className="text-xs text-muted">Checking...</span>
+                ) : isDemoMode ? (
+                  <Badge variant="indigo" className="gap-1 text-xs">
+                    <CheckCircle2 className="w-3 h-3 text-indigo-400" />
+                    <span>Showcase Demo (Active)</span>
+                  </Badge>
                 ) : llmStatus?.configured && llmStatus.status === "connected" ? (
                   <Badge variant="success" className="gap-1 text-xs">
                     <CheckCircle2 className="w-3 h-3" />
@@ -132,7 +137,7 @@ export default function SettingsPage() {
                 )}
               </div>
               <span className="text-[10px] text-muted">
-                {llmStatus?.configured ? "Live Gemini Generation" : "Offline Simulation"}
+                {isDemoMode ? "Curated Benchmark Showcase" : llmStatus?.configured ? "Live Gemini Generation" : "Offline Simulation"}
               </span>
             </div>
           </div>

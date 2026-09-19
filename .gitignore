@@ -12,7 +12,7 @@ out/
 build/
 dist/
 
-# Python
+# Python virtual environments & build artifacts
 backend/venv/
 backend/env/
 venv/
@@ -22,13 +22,10 @@ __pycache__/
 *$py.class
 *.so
 .Python
-build/
 develop-eggs/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
 parts/
 sdist/
 var/
@@ -36,6 +33,20 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+
+# Specific Python lib ignores (do NOT ignore frontend/lib)
+backend/lib/
+backend/lib64/
+venv/lib/
+venv/lib64/
+env/lib/
+env/lib64/
+
+# Explicitly ensure frontend source files are tracked
+!frontend/lib/
+!frontend/lib/**
+!frontend/data/
+!frontend/data/**
 
 # Database
 *.db
@@ -50,8 +61,11 @@ backend/kizuna.db
 .env.test.local
 .env.production.local
 backend/.env
-frontend/.env
 frontend/.env.local
+
+# Allow committing demo/example configs
+!frontend/.env.example
+!.env.example
 
 # IDE & OS
 .vscode/
